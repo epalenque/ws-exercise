@@ -1,0 +1,36 @@
+.remote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.keyboard_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2 , auto);
+  justify-items: center;
+}
+
+.up_key {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.left_key {
+  grid-column: 1;
+  grid-row: 2;
+  transform: rotateZ(-90deg);
+}
+
+.down_key {
+  grid-column: 2;
+  grid-row: 2;
+  transform: rotateZ(180deg);
+}
+
+.right_key {
+  grid-column: 3;
+  grid-row: 2;
+  transform: rotateZ(90deg);
+}
